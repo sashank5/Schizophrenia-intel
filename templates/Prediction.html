@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/nicepage.css') }}" media="screen">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Prediction.css') }}" media="screen">
+        <script class="u-script" type="text/javascript" src="{{ url_for('static',filename='script/jquery.js') }}" defer=""></script>
+        <script class="u-script" type="text/javascript" src="{{ url_for('static',filename='script/nicepage.js') }}" defer=""></script>
+        <link href="{{ url_for('static',filename='css/chatbox.css') }}" rel="stylesheet">
+    <meta name="generator" content="Nicepage 5.4.4, nicepage.com">
+    
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Prediction">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-grey-60 u-header" id="sec-73e8" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-sheet-1">
+        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700; text-transform: uppercase;">
+            <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-f57c"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="svg-f57c" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-custom-font u-heading-font u-nav u-spacing-40 u-unstyled u-nav-1"><li class="u-nav-item">
+              <a class="u-border-2 u-border-active-palette-4-light-3 u-border-grey-90 u-border-hover-palette-3-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-4-light-1 u-text-grey-90 u-text-hover-palette-2-light-1" onclick="location.href='/'" style="padding: 10px 0px;">Home</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-4-light-3 u-border-grey-90 u-border-hover-palette-3-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-4-light-1 u-text-grey-90 u-text-hover-palette-2-light-1" onclick="location.href='/Prediction'" style="padding: 10px 0px;">Prediction</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-4-light-3 u-border-grey-90 u-border-hover-palette-3-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-4-light-1 u-text-grey-90 u-text-hover-palette-2-light-1" onclick="location.href='/Effects'" style="padding: 10px 0px;">Effects</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-4-light-3 u-border-grey-90 u-border-hover-palette-3-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-4-light-1 u-text-grey-90 u-text-hover-palette-2-light-1" onclick="location.href='/Prevention'" style="padding: 10px 0px;">Prevention</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-4-light-3 u-border-grey-90 u-border-hover-palette-3-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-4-light-1 u-text-grey-90 u-text-hover-palette-2-light-1" onclick="location.href='/Medical-Help'" style="padding: 10px 0px;">Medical Help</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-4-light-3 u-border-grey-90 u-border-hover-palette-3-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-4-light-1 u-text-grey-90 u-text-hover-palette-2-light-1" onclick="location.href='/Patient-Experience'" style="padding: 10px 0px;">Patient Experience</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item">
+                  <a class="u-button-style u-nav-link" onclick="location.href='/'">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" onclick="location.href='/Prediction'">Prediction</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" onclick="location.href='/Effects'">Effects</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" onclick="location.href='/Prevention'">Prevention</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" onclick="location.href='/Medical-Help'">Medical Help</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" onclick="location.href='/Patient-Experience'">Patient Experience</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+        <div class="u-container-style u-group u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <p class="u-text u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500">Schizophrenia</p>
+          </div>
+        </div>
+      </div></header>
+
+      <style>
+        .u-section-1 .data{
+          top: 40px;
+          width: 400px;
+        }
+      </style>
+      
+    <section class="u-clearfix u-section-1" id="sec-6024">
+      <div class="u-clearfix u-sheet u-valign-bottom-xs u-sheet-1">
+        <div class="u-container-style u-group u-white u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <p class="u-custom-font u-heading-font u-text u-text-1">Prediction of Schizophrenia</p>
+          </div>
+        </div>
+        <div>
+          <p class="text"> Detection of schizophrenia is important because early diagnosis and treatment can lead to better outcomes for those affected. With appropriate care, individuals with schizophrenia can lead fulfilling lives and manage their symptoms, reducing the impact on their daily functioning and overall quality of life. Early detection also helps to reduce the risk of complications such as substance abuse, depression, and suicide. Furthermore, prompt diagnosis and treatment can prevent unnecessary suffering and reduce the burden on families and the healthcare system.<br>
+          </p>
+        </div>
+        <div class="data">
+          <form action="{{ url_for('predict')}}"method="post">
+
+            <fieldset class="data">
+              <div>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Enter your age" required>
+              </div>
+              <div>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+              <div>
+                <label for="physical_health">Physical Health:</label>
+                <select id="physical_health" name="physical_health" required>
+                  <option value="average">Average</option>
+                  <option value="excellent">Excellent</option>
+                  <option value="poor">Poor</option>
+                </select>
+              </div>
+              <div>
+                <label for="mental_health">Mental Health:</label>
+                <select id="mental_health" name="mental_health" required>
+                  <option value="average">Average</option>
+                  <option value="excellent">Excellent</option>
+                  <option value="poor">Poor</option>
+                </select>
+              </div>
+              <div>
+                <label for="workpressure">Work Pressure:</label>
+                <select id="workpressure" name="workpressure" required>
+                  <option value="no">No</option>
+                  <option value="yes">Yes</option>
+                  <option value="maybe">Maybe</option>
+                </select>
+              </div>
+      
+              <div>
+                  <label for="emotionalpressure">Emotional pressure:</label>
+                  <select id="emotionalpressure" name="emotionalpressure" required>
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                    <option value="maybe">Maybe</option>
+                  </select>
+                </div>
+      
+                <div>
+                  <label for="mental_ability_workdone">Mental Ability Workdone:</label>
+                  <select id="mental_ability_workdone" name="mental_ability_workdone" required>
+                    <option value="Sometimes">Sometimes</option>
+                    <option value="Notso often">Notso often</option>
+                    <option value="Very often">Very often</option>
+                  </select>
+                </div>
+      
+                <div>
+                  <label for="mental_relationship">Mental Relationship:</label>
+                  <select id="mental_relationship" name="mental_relationship" required>
+                      <option value="Sometimes">Sometimes</option>
+                      <option value="Notso often">Notso often</option>
+                      <option value="Very often">Very often</option>
+                  </select>
+                </div>
+      
+                <div>
+                  <label for="felt_low">Felt Low:</label>
+                  <select id="felt_low" name="felt_low" required>
+                      <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                    <option value="maybe">Maybe</option>
+                  </select>
+                </div>
+      
+      
+                <div>
+                  <label for="diet_change">Diet change:</label>
+                  <select id="diet_change" name="diet_change" required>
+                    <option value="No Change">No Change</option>
+                    <option value="Yes, I don't feel hungry">Yes, I don't feel hungry</option>
+                    <option value="Yes, I ate too much">Yes, I ate too much</option>
+                  </select>
+                </div>
+      
+      
+                <div>
+                  <label for="last_happy">Last happy:</label>
+                  <select id="last_happy" name="last_happy" required>
+                    <option value="Few days ago">Few days ago</option>
+                    <option value="Few months ago">Few months ago</option>
+                    <option value="Few weeks ago">Few weeks ago</option>
+                  </select>
+                </div>
+      
+                <div>
+                  <label for="felt_good">Felt good:</label>
+                  <select id="felt_good" name="felt_good" required>
+                      <option value="Few days ago">Few days ago</option>
+                      <option value="Few months ago">Few months ago</option>
+                      <option value="Few weeks ago">Few weeks ago</option>
+                  </select>
+                </div>
+      
+                <div>
+                  <label for="positive">Positive:</label>
+                  <select id="positive" name="positive" required>
+                    <option value="Everytime">Everytime</option>
+                    <option value="Sometimes">Sometimes</option>
+                    <option value="Once in a while">Once in a while</option>
+                    <option value="Never">Never</option>
+                  </select>
+                </div>
+      
+                <div>
+                  <label for="history_disorder">History disorder:</label>
+                  <select id="history_disorder" name="history_disorder" required>
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                  </select>
+                </div>
+      
+                <div>
+                  <label for="therapist">Therapist:</label>
+                  <select id="therapist" name="therapist" required>
+                      <option value="No">No</option>
+                      <option value="Yes">Yes</option>
+                  </select>
+                </div>
+      
+                <div>
+                  <label for="medication">Medication:</label>
+                  <select id="medication" name="medication" required>
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                  </select>
+                </div>
+      
+                <div>
+                  <label for="sleep_quality">Sleep quality:</label>
+                  <select id="sleep_quality" name="sleep_quality" required>
+                    <option value="Good">Good</option>
+                    <option value="Average">Average</option>
+                    <option value="Bad">Bad</option>
+                  </select>
+                </div>
+      
+                <div>
+                  <label for="smoke">Smoke:</label>
+                  <select id="smoke" name="smoke" required>
+                    <option value="Never">Never</option>
+                    <option value="Daily">Daily</option>
+                    <option value="Once in a week">Once in a week</option>
+                  </select>
+                </div>
+      
+                <div>
+                  <label for="drink">Drink:</label>
+                  <select id="drink" name="drink" required>
+                      <option value="Never">Never</option>
+                      <option value="Daily">Daily</option>
+                      <option value="Once in a week">Once in a week</option>
+                  </select>
+                </div>
+      
+      
+            </fieldset>
+            <button type="submit" class="prediction-button5">Predict</button>
+
+          </form>
+          <br>
+          <br>
+          <br>
+          <ul class="out1">
+            {% for item in occurance %}
+              {{ item }}
+            {% endfor %}
+          </ul>
+        
+          <ul class="out2">
+            {% for item1 in non_occurance %}
+              {{ item1 }}
+            {% endfor %}
+          </ul>
+        
+          <ul class="out3">
+            {% for item2 in child_occur %}
+              {{ item2 }}
+            {% endfor %}
+          </ul>
+        </div>
+      
+     
+      </div>
+      
+    </section>
+    
+    
+    <div class="container">
+      <div class="chatbox">
+          <div class="chatbox__support">
+              <div class="chatbox__header">
+                  <div class="chatbox__image--header">
+                      <img src="{{ url_for('static',filename='images/chat_supp.png') }}" height="35px"width="35px" alt="image">
+                  </div>
+                  <div class="chatbox__content--header">
+                      <h4 class="chatbox__heading--header">Chat support</h4>
+                      <p class="chatbox__description--header">Hi. My name is Schizo. How can I help you?</p>
+                  </div>
+              </div>
+              <div class="chatbox__messages">
+                  <div></div>
+              </div>
+              <div class="chatbox__footer">
+                  <input type="text" placeholder="Write a message...">
+                  <button class="chatbox__send--footer send__button">Send</button>
+              </div>
+          </div>
+          <div class="chatbox__button">
+              <button><img src="{{ url_for('static',filename='images/chat_button.png') }}"height='30px' width="30px" /></button>
+          </div>
+      </div>
+    </div>
+    <script src="{{ url_for('static',filename='script/chat.js') }}"></script>
+
+    
+</body></html>

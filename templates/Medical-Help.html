@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Medical Help</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/nicepage.css') }}" media="screen">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Medical-Help.css') }}" media="screen">
+        <script class="u-script" type="text/javascript" src="{{ url_for('static',filename='script/jquery.js') }}" defer=""></script>
+        <script class="u-script" type="text/javascript" src="{{ url_for('static',filename='script/nicepage.js') }}" defer=""></script>
+        <link href="{{ url_for('static',filename='css/chatbox.css') }}" rel="stylesheet">
+    <meta name="generator" content="Nicepage 5.4.4, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Medical Help">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-grey-60 u-header" id="sec-73e8" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-sheet-1">
+        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700; text-transform: uppercase;">
+            <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-f57c"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="svg-f57c" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-custom-font u-heading-font u-nav u-spacing-40 u-unstyled u-nav-1"><li class="u-nav-item">
+              <a class="u-border-2 u-border-active-palette-4-light-3 u-border-grey-90 u-border-hover-palette-3-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-4-light-1 u-text-grey-90 u-text-hover-palette-2-light-1" onclick="location.href='/'" style="padding: 10px 0px;">Home</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-4-light-3 u-border-grey-90 u-border-hover-palette-3-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-4-light-1 u-text-grey-90 u-text-hover-palette-2-light-1" onclick="location.href='/Prediction'" style="padding: 10px 0px;">Prediction</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-4-light-3 u-border-grey-90 u-border-hover-palette-3-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-4-light-1 u-text-grey-90 u-text-hover-palette-2-light-1" onclick="location.href='/Effects'" style="padding: 10px 0px;">Effects</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-4-light-3 u-border-grey-90 u-border-hover-palette-3-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-4-light-1 u-text-grey-90 u-text-hover-palette-2-light-1" onclick="location.href='/Prevention'" style="padding: 10px 0px;">Prevention</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-4-light-3 u-border-grey-90 u-border-hover-palette-3-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-4-light-1 u-text-grey-90 u-text-hover-palette-2-light-1" onclick="location.href='/Medical-Help'" style="padding: 10px 0px;">Medical Help</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-4-light-3 u-border-grey-90 u-border-hover-palette-3-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-4-light-1 u-text-grey-90 u-text-hover-palette-2-light-1" onclick="location.href='/Patient-Experience'" style="padding: 10px 0px;">Patient Experience</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item">
+                  <a class="u-button-style u-nav-link" onclick="location.href='/'">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" onclick="location.href='/Prediction'">Prediction</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" onclick="location.href='/Effects'">Effects</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" onclick="location.href='/Prevention'">Prevention</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" onclick="location.href='/Medical-Help'">Medical Help</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" onclick="location.href='/Patient-Experience'">Patient Experience</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+        <div class="u-container-style u-group u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <p class="u-text u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500">Schizophrenia</p>
+          </div>
+        </div>
+      </div></header>
+    <section class="u-clearfix u-section-1" id="sec-3e78">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+                <div class="u-container-layout u-valign-top u-container-layout-1">
+                  <p class="u-align-justify u-heading-font u-text u-text-1">
+                    <span style="font-size: 1.875rem; font-weight: 700;"> Medical help for Schizophrenia</span>
+                    <br>
+                    <br>If you or someone you know is experiencing symptoms of schizophrenia, it is important to seek medical help as soon as possible. There are several options available<span style="font-weight: 700;">:<br>
+                      <br>Psychiatrist:&nbsp;
+                    </span>A medical doctor who specializes in the treatment of mental illnesses, including schizophrenia. They can diagnose the condition, prescribe medication, and provide therapy.<br>
+                    <br>
+                    <span style="font-weight: 700;">Mental Health Clinic:&nbsp;</span>These clinics offer comprehensive mental health services, including psychiatric evaluations, medication management, and therapy.<br>
+                    <br>
+                    <span style="font-weight: 700;">General Practitioner (GP):</span>&nbsp;Your primary care physician can refer you to a specialist for treatment or provide basic care for schizophrenia symptoms, including prescribing medication.<br>
+                    <br>
+                    <span style="font-weight: 700;"></span>
+                  </p>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+                <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-container-layout-2">
+                  <img class="u-image u-image-default u-preserve-proportions u-image-1" src="{{ url_for('static',filename='images/medi_help3.png') }}" alt="" data-image-width="498" data-image-height="498" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-direction="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-2" id="sec-c650">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+                <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-container-layout-1">
+                  <img class="u-expanded-width u-image u-image-default u-image-1" src="{{ url_for('static',filename='images/medi_help1.png') }}" alt="" data-image-width="567" data-image-height="340" data-animation-name="customAnimationIn" data-animation-duration="1000">
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-2">
+                  <p class="u-align-justify u-heading-font u-text u-text-1">
+                    <span style="font-weight: 700;">Community Mental Health Centers:&nbsp;</span>These centers provide mental health services, including treatment for schizophrenia, to people in their community, regardless of their ability to pay.<br>
+                    <br>
+                    <span style="font-weight: 700;">Hospital Outpatient Programs:</span>&nbsp;If the symptoms of schizophrenia are severe, you may be referred to a hospital outpatient program for treatment.<br>
+                    <br>
+                    <span style="font-weight: 700;">Emergency Room:</span>&nbsp;In a mental health crisis, you can go to the emergency room for immediate assistance.<br>
+                    <br>It's important to note that seeking help and finding the right treatment plan may take time, but it is essential for managing the symptoms of schizophrenia and improving overall quality of life.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-3" id="sec-9abd">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-heading-font u-text u-text-default u-text-1">
+          <span style="font-weight: 700; font-size: 1.875rem;"> Hospitals for Treatment</span>
+          <br>
+          <br>There are many hospitals in India that offer treatment for schizophrenia, here are few top hospitals known for their psychiatric care:<br>
+          <br>National Institute of Mental Health and Neuro Sciences (NIMHANS), Bangalore.<br>All India Institute of Medical Sciences (AIIMS), New Delhi.<br>Christian Medical College (CMC), Vellore.<br>Institute of Human Behaviour and Allied Sciences (IHBAS), Delhi.<br>Kasturba Medical College (KMC), Manipal.Nimhans Centre for Well-Being, Bangalore.<br>Nirlajan Hospital, Ahmedabad.Sankara Nethralaya, Chennai.<br>Bharati Vidyapeeth Deemed University, Pune.Ruby Hall Clinic, Pune.<br>
+          <br>It is important to note that the best hospital for a person with schizophrenia will depend on their individual needs and the severity of their condition. It's always a good idea to consult with a doctor or mental health professional for personalized recommendations.<br>
+        </p>
+      </div>
+    </section>
+    
+    
+    
+    <div class="container">
+      <div class="chatbox">
+          <div class="chatbox__support">
+              <div class="chatbox__header">
+                  <div class="chatbox__image--header">
+                      <img src="{{ url_for('static',filename='images/chat_supp.png') }}" height="35px"width="35px" alt="image">
+                  </div>
+                  <div class="chatbox__content--header">
+                      <h4 class="chatbox__heading--header">Chat support</h4>
+                      <p class="chatbox__description--header">Hi. My name is Schizo. How can I help you?</p>
+                  </div>
+              </div>
+              <div class="chatbox__messages">
+                  <div></div>
+              </div>
+              <div class="chatbox__footer">
+                  <input type="text" placeholder="Write a message...">
+                  <button class="chatbox__send--footer send__button">Send</button>
+              </div>
+          </div>
+          <div class="chatbox__button">
+              <button><img src="{{ url_for('static',filename='images/chat_button.png') }}"height='30px' width="30px" /></button>
+          </div>
+      </div>
+    </div>
+    <script src="{{ url_for('static',filename='script/chat.js') }}"></script>
+
+  
+</body></html>
