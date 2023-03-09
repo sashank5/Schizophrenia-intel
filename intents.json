@@ -1,0 +1,143 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "How are you",
+          "Is anyone there?",
+          "Hello",
+          "Good day"
+        ],
+        "responses": [
+          "Hey :-)",
+          "Hello, thanks for visiting",
+          "Hi there, what can I do for you?",
+          "Hi there, how can I help?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye"],
+        "responses": [
+          "See you later, thanks for visiting",
+          "Have a nice day",
+          "Bye! Come back again soon."
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+        "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      },
+      {
+        "tag": "you",
+        "patterns": [
+          "What are you?",
+          "What kinds of work you do?",
+          "you are?"
+        ],
+        "responses": [
+          "I am a chatbot that helps you to clear doubts on schizophrenia"
+          
+        ]
+      },
+      {
+        "tag": "doubt",
+        "patterns": [
+          "I have doubt on schizophrenia"
+        ],
+        "responses": [
+          "Sure, Happy to help"
+        ]
+      },
+      {
+        "tag": ["dangerous","risky","harmful","kill"],
+        "patterns": [
+          "Is schizophrenia danger?",
+          "Is it harmful to me?",
+          "Does it kill me?"
+        ],
+        "responses": [
+          "Schizophrenia is dangerous mental disorder that can cost your life."
+        ]
+      },
+      {
+        "tag": ["prevent","mitigate","reduce","remove"],
+        "patterns": [
+          "Is it possible to reduce schizophrenia?",
+          "How to prevent it",
+          "can we prevent it?",
+          "can we mitigate the risk?",
+          "can we remove schizophrenia?"
+        ],
+        "responses": [
+          "It is not possible to prevent schizophrenia completely, the risks can be reduced by some methods."
+        ]
+      },
+      {
+        "tag": ["methods","ways","how to"],
+        "patterns": [
+          "What methods are there?",
+          "methods to control schizophrenia",
+          "ways to stop it",
+          "how to stop schizophrenia and reduce risk"
+          
+        ],
+        "responses": [
+          "You can reduce risk by medication,therapy. Complete details are given in Prevention Tab"
+        ]
+      },
+      {
+        "tag": ["occur","source","got"],
+        "patterns": [
+          "Why schizophrenia occurs",
+          "what is the source of schizophrenia",
+          "how did i got schizophrenia"
+          
+        ],
+        "responses": [
+          "The occurance of schizophrenia is due to various like combination of genetic and environmental factors. For more info you can visit the home page"
+        ]
+      },
+      {
+        "tag": ["medical help","hospitals","treatment"],
+        "patterns": [
+          "Where can i get medical help",
+          "what are the hospitals that provide treatment for schizophrenia",
+          "where are the treatments given?"
+          
+        ],
+        "responses": [
+          "You can visit Medical Help tab for more info"
+        ]
+      },
+      {
+        "tag": ["experience","past experience","real world examples"],
+        "patterns": [
+          "Are there any patients with experience in schizophrenia",
+          "Does any one had past experience with this disorder",
+          "some real world examples please"
+          
+        ],
+        "responses": [
+          "You can visit Patient Experience tab for more info"
+        ]
+      },
+      {
+        "tag": ["effects","affect"],
+        "patterns": [
+          "what are effects of schizophrenia",
+          "How it will affect",
+          "effects of it",
+          "What are the effects",
+          "Effects"
+        ],
+        "responses": [
+          "The effects are hallucination, speech disorder,for more info visit Effects tab"
+        ]
+      }
+    ]
+  }
+  
